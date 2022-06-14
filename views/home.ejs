@@ -1,0 +1,116 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!----フォントを読み込む-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <title>備忘録</title>
+    </head>
+    <body>
+         <header>
+          <div class="container">
+            <h1>備忘録</h1><!--画像かも-->
+           </div>
+           <a href="/new">管理者</a>
+         </header>
+            <nav>
+                <ul class="nav-title">
+                    <li>ホーム</li>
+                    <li>学習記録</li>
+                    <li>私生活</li>
+                    <li>趣味</li>
+                </ul>
+            </nav>
+
+    <div class="container">
+         <main>
+
+             <% articles.forEach((article) => {%>
+            <div class="text-wrapper">
+                <div class="text-title">
+                
+                    <h2 ><%= article.title%></h2>
+                    <p>カテゴリー</p>
+                    <p><%= article.time%></p>
+
+                    <form action="/delete/<%=article.id %>" method="post">
+                      <button class="delete-icon"><img src="../images/ごみ箱のフリーアイコン.png"></button>
+                    </form>
+
+                </div>
+                    
+                <p><%= article.corum %>
+                </p>
+
+                <a href="/article/<%= article.id %>">続きを見る</a>
+               
+            </div>
+             <% }); %>
+        
+
+            <div>1</div>
+            <div>2</div>
+
+         </main>
+
+         <div class="side-menu">
+            <div class="introduce-wrapper">
+                    <img class="icon-image"src="../images/彩雲サイト用.jpg">
+                    <img  class="icon-me" src="../images/top_copy.png" >
+                    <p>新卒23才です<br>よろしくです</p>
+                <div class="sns-group">
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+
+          <div class="question-form">
+              <p class="btn">お問い合わせ・ご依頼</p>
+              <p class="btn">応援メッセージ</p>
+          </div>
+         </div>
+
+        </div>
+
+        <div id="alert-bar">
+            <div class="alert-wrapper">
+                <div><img class="back-btn" src="../images/やや太いバツのアイコン.png"></div>
+                <img class="attention" src="../images/注意マークのアイコン素材 その2 (1).png">
+                <div>一度削除すると元に戻せません</div>
+                <form action="">
+                    <div>以下のタイトル記事を削除してよろしいですか</div>
+                    <h2>「ここに選択したタイトルが入る予定」</h2>
+                    <button>いいえ</button>
+                    <form action="/delete"></form>
+                    <button>はい</button>
+                </form>
+            </div>
+        </div>
+
+
+         <footer>
+             <div class="container">
+                 <div class="footer-copyright">
+                    <div>©yamshita</div>
+                    <div>202206</div>
+                 </div>
+
+                 <p id="page-top">
+                    <a href="#"></a>
+                 </p>
+
+            </div>
+         </footer>
+
+
+         <!----------jquery読み込み---------------->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"></script>
+
+<script src="../css/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!----フォントを読み込む-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>備忘録</title>
+    </head>
+    <body>
+         <header>
+          <div class="container">
+            <h1>備忘録</h1><!--画像かも-->
+           </div>
+         </header>
+            <nav>
+                <ul class="nav-title">
+                    <li>ホーム</li>
+                    <li>学習記録</li>
+                    <li>私生活</li>
+                    <li>趣味</li>
+                </ul>
+            </nav>
+
+    <div class="container">
+         <main>
+            <div class="create-wrapper">
+                <form action="/new" method="post">
+                    <div class="text-title">
+                        <p>タイトル</p>
+                            <input type="text" name="title">
+                            <select name="blog-category">
+                                <object data="" type="" value="学習記録">学習記録</object>
+                                <object data="" type="" value="趣味">趣味</object>
+                                <object data="" type="" value="雑談">雑談</object>
+                            </select>
+
+                        <p>日付取得するには？</p>
+                        <p>コラム</p>
+                        <input type="text" name="corum">
+                    </div>
+                    
+                <p>本文</p>
+                    <textarea name="main" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="作成">
+                </form>
+            </div>
+            
+
+         </main>
+
+      
+
+        </div>
+
+         <footer>
+             <div class="container">
+                 <div class="footer-copyright">
+                    <div>©yamshita</div>
+                    <div>202206</div>
+                 </div>
+            </div>
+         </footer>
+
+    </body>
+</html>

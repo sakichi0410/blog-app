@@ -1,0 +1,284 @@
+/*---共通タグ----*/
+body{
+    background-color: #fafafa;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    border: 1px solid red;
+    margin: 30px auto;
+}
+li {
+    list-style: none;
+}
+
+/*----------ヘッダ----------*/
+header {
+    margin:0;
+    background-color: #83A749;
+    padding: 20px;
+}
+
+header h1 {
+    color:#ffffff;
+    width:120px;
+    margin: 0 auto;
+}
+
+.login-form{
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-title {
+    border-bottom:1px solid #83A749;
+    width: 100%;
+    text-align: center;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.nav-title li {
+    display: inline-block;
+    padding:10px;
+    margin: 0 20px;
+}
+
+/*-----------メイン-----------------*/
+main {
+    width: 750px;
+    padding: 20px;
+    margin:10px;
+    border: 1px solid blue;
+}
+.text-wrapper {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border:1px solid #AFBEA9;
+    border-radius: 10px;
+}
+
+.text-title {
+    border-bottom:1px solid  #AFBEA9;
+}
+
+
+
+/*-----------自己紹介---------------*/
+.side-menu {
+    margin:10px 10px 10px 20px ;
+    padding:10px;
+    border: 1px solid purple;
+    width: 350px;
+}
+
+.introduce-wrapper {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #AFBEA9;
+}
+
+.introduce-wrapper p{
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  border:1px solid red;
+}
+
+.icon-image {
+    width: 100%;
+}
+
+
+.icon-me {
+    display: block;
+    margin: -50px auto;
+    width:80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.sns-group {
+    text-align: center;
+}
+
+.fa {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 30px;
+    color: rgb(22,66, 40);
+}
+
+.fa:hover {
+    color: rgba(22,66, 40,0.8);
+}
+
+/*------------お問い合わせ-----------------*/
+.question-form {
+    border: 1px solid skyblue;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#ffffff;
+    background-color: rgb(22,66, 40);
+}
+
+.btn:hover {
+    background-color: rgba(22,66, 40, 0.8);
+}
+
+
+/*-------------フッター------------------*/
+footer {
+    color: #ffffff;
+    background-color: #83A749;
+    margin:0;
+    padding: 20px;
+}
+
+.footer-copyright {
+    margin: 0 auto;
+}
+.footer-copyright div {
+    text-align: center;
+}
+
+/*--------------ページトップボタン-----------------*/
+
+#page-top a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    background: url(../images/矢印ボタン\　上3.png) no-repeat center;
+    border: 1px solid blue;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(22,66, 40);
+}
+
+#page-top a:hover {
+    opacity: 0.7;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+    /*初めは非表示にする↓*/
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/*上に上がる動き*/
+#page-top UpMove{
+    animation:UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+    
+}
+
+
+
+
+/*-----ログインフォーム-----*/
+.login-form h2 {
+    text-align: center;
+}
+
+.login-wrapper {
+    background-color: #ffffff;
+    width:30%;
+    padding:20px;
+    margin: 20px auto;
+    border: 1px solid #AFBEA9;
+    border-radius: 5px;
+}
+
+.login-form {
+    margin: 0 30px;
+}
+
+
+.login-form input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+}
+
+/*---------お問い合わせフォーム-------------*/
+.question-wrapper {
+    background-color: #ffffff;
+    width:40%;
+    padding:20px;
+    margin: 20px auto;
+    border: 1px solid #AFBEA9;
+    border-radius: 5px;
+}
+.question-wrapper h2 {
+    text-align: center;
+}
+
+select {
+    width: 20%;
+}
+textarea {
+    width: 50%;
+    height: 100px;
+}
+
+.question-btn {
+    display: block;
+    margin-top: 10px;
+}
+
+/*-----------削除警告文------------*/
+#alert-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+
+.alert-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    border: 1px solid orange;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding:20px 10px;
+}
+
+.back-btn {
+    width:20px;
+    float: right;
+    cursor: pointer;
+}
+
+.attention {
+    width: 80px;
+    padding: 20px;
+}
+
+span {
+    color:red;
+}

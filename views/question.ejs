@@ -1,0 +1,60 @@
+<html lang="ja">
+    <head>
+        <!----ログインサイト---->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!----フォントを読み込む-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>備忘録</title>
+    </head>
+    <body>
+         <header>
+          <div class="container">
+            <h1>備忘録</h1><!--画像かも-->
+           </div>
+         </header>
+            <nav>
+                <ul class="nav-title">
+                    <li>ホーム</li>
+                    <li>学習記録</li>
+                    <li>私生活</li>
+                    <li>趣味</li>
+                </ul>
+            </nav>
+
+    <div class="container">
+             <div class="question-wrapper">
+
+                <form class="question-form">
+                    <h2>お問い合わせ・ご依頼</h2>
+                    <p>お名前</p>
+                    <input type="text" name="name">
+                    <p>メールアドレス</p>
+                    <input type="text" name="email">
+                    <p>カテゴリー</p>
+                    <select name="category" id="">
+                        <object value="ご依頼">ご依頼</object>
+                        <object value="宣伝広告">宣伝広告</object>
+                        <object value="その他">その他</object>
+                    </select>
+                    <p>内容</p>
+                    <textarea name="text-message"></textarea>
+                    
+                    <input type="submit" value="送信" class="question-btn"> 
+                </form>
+                
+             </div>
+        </div>
+
+         <footer>
+             <div class="container">
+                 <div class="footer-copyright">
+                    <div>©yamshita</div>
+                    <div>202206</div>
+                 </div>
+            </div>
+         </footer>
+
+    </body>
+</html>
